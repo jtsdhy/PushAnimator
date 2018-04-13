@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="navgationBar" destination="Vii-pn-MuA" id="pCB-0c-tbh"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Vii-pn-MuA">
+                    <rect key="frame" x="0.0" y="228" width="480" height="44"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lO1-kC-hLg">
+                            <rect key="frame" x="14" y="4" width="70" height="32"/>
+                            <buttonCell key="cell" type="push" title="Back" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mal-gT-fvY">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="backAction:" target="-2" id="i1x-bQ-PMV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="lO1-kC-hLg" firstAttribute="leading" secondItem="Vii-pn-MuA" secondAttribute="leading" constant="20" id="Cdl-jY-oW0"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="LXD-V7-yJC"/>
+                        <constraint firstItem="lO1-kC-hLg" firstAttribute="centerY" secondItem="Vii-pn-MuA" secondAttribute="centerY" id="fUQ-dh-tto"/>
+                        <constraint firstAttribute="height" constant="44" id="uBC-4D-wqO"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Vii-pn-MuA" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Vg3-jG-cXl"/>
+                <constraint firstAttribute="trailing" secondItem="Vii-pn-MuA" secondAttribute="trailing" id="jKT-Dv-ffN"/>
+                <constraint firstItem="Vii-pn-MuA" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="wJf-5B-vo8"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>
